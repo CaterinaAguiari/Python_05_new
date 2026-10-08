@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "loading"
+version = "0.1.0"
+description = "Exercise 0: Loading external reagents"
+authors = ["Caterina Aguiari"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^3.0.6"
+numpy = "^2.4.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+exclude = [
+    ".git",
+    "__pycache__",
+    "venv",
+    ".venv"
+]
